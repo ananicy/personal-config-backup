@@ -121,6 +121,24 @@ widget_order = []
 monitors = [ "DP-2" ]
 shadow = false
 
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
 [location]
 address = "Chicago"
 
@@ -308,7 +326,6 @@ ui_scale = 1.2500000111758709
     session_placement = "floating"
     session_position = "center"
     shadow = false
-    transparency_mode = "glass"
     wallpaper_placement = "floating"
     wallpaper_position = "center"
 
