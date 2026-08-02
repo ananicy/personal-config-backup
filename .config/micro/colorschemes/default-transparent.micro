@@ -1,0 +1,3 @@
+# Color Scheme: default-transparent
+# https://andertm.github.io/micro-editor-colorscheme/
+color-link default "bold [fg color],[bg color]"
