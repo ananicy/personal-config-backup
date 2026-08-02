@@ -4,6 +4,6 @@ rsync -av ~/git/personal-config-backup/.local ~/
 
 rsync -av ~/git/personal-config-backup/Document ~/
 
-rsync -av ~/git/personal-config-backup/system/etc/pam.d /etc/
+sudo rsync -av ~/git/personal-config-backup/system/etc/pam.d /etc/
 
-rsync -av ~/git/personal-config-backup/system/var/lib/noctalia-greeter /var/lib/ 
+sudo rsync -av ~/git/personal-config-backup/system/var/lib/noctalia-greeter /var/lib/ 
