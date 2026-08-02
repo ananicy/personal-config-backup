@@ -1,0 +1,19 @@
+sudo cachyos-rate-mirrors
+sudo pacman -Sy archlinux-keyring
+sudo pacman -Syu
+
+(Localsend) (KDE) (Steam local transfer)
+sudo ufw allow 53317/udp
+sudo ufw allow 53317/tcp
+sudo ufw reload
+
+sudo ufw allow 1714:1764/udp
+sudo ufw allow 1714:1764/tcp
+sudo ufw reload
+
+sudo ufw allow 27031:27036/udp
+sudo ufw allow 27040/tcp
+sudo ufw reload
+
+ln -s ~/Drive/4TB\ Drive/PCSX2/ /home/lemontree/.var/app/net.pcsx2.PCSX2/config/
+rsync -av --delete ~/.config/yazi ~/Drive/4TB\ Drive/Backups/.config/

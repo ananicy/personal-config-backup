@@ -1,0 +1,584 @@
+config_version = 8
+
+[accessibility]
+ui_scale = 1.2500000111758709
+
+[audio]
+enable_sounds = true
+notification_sound = "/home/lemontree/Drive/4TB Drive/Sound effects/Hint.wav"
+sound_volume = 0.99999997764825821
+volume_change_sound = "/home/lemontree/Drive/4TB Drive/Sound effects/Choosing.wav"
+
+[bar]
+order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
+
+    [bar.2nd-Bar]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    center = []
+    contact_shadow = false
+    end = [ "media" ]
+    font_weight = 700
+    margin_edge = 0
+    margin_ends = 0
+    padding = 7
+    scale = 2.0000000223517418
+    start = [ "clock", "CPU", "RAM", "SWAP", "CPU_TEMP", "GPU", "VRAM", "GPU_TEMP", "network_rx", "network_tx", "workspaces" ]
+    thickness = 45
+    widget_spacing = 2
+
+        [bar.2nd-Bar.monitor.DP-1]
+        contact_shadow = false
+        enabled = false
+        shadow = false
+
+    [bar.3rd-Bar]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_opacity = 0.4999999888241291
+    capsule_radius = 6
+    center = []
+    color = "primary"
+    contact_shadow = false
+    enabled = false
+    end = [ "workspaces", "audio_visualizer" ]
+    font_weight = 700
+    margin_edge = 0
+    margin_ends = 0
+    padding = 7
+    position = "left"
+    scale = 2.0000000223517418
+    start = [ "clock" ]
+    thickness = 45
+    widget_spacing = 2
+
+        [bar.3rd-Bar.monitor.DP-1]
+        enabled = false
+
+    [bar.Bar]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_opacity = 0.4999999888241291
+    capsule_radius = 6
+    center = []
+    color = "primary"
+    contact_shadow = false
+    end = [ "workspaces", "recorder", "tray", "group:g2", "network", "widget_2" ]
+    font_weight = 700
+    margin_edge = 0
+    margin_ends = 0
+    padding = 7
+    scale = 2.0000000223517418
+    start = [ "group:g1", "media", "active_window" ]
+    thickness = 45
+    widget_spacing = 2
+
+        [bar.Bar.monitor.DP-2]
+        contact_shadow = false
+        enabled = false
+        position = "left"
+        shadow = false
+
+        [[bar.Bar.capsule_group]]
+        border = "primary"
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "date", "clock" ]
+        opacity = 0.5
+        padding = 6.0
+        radius = 6.0
+
+        [[bar.Bar.capsule_group]]
+        border = "primary"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "notifications", "bluetooth", "widget" ]
+        opacity = 0.5
+        padding = 6.0
+        radius = 6.0
+
+[control_center]
+sidebar = "full"
+sidebar_section = "full"
+
+[desktop_widgets]
+schema_version = 1
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 24
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+monitors = [ "DP-2" ]
+shadow = false
+
+[location]
+address = "Chicago"
+
+[lockscreen]
+blur_intensity = 0.74999998323619366
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 1
+widget_order = [
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 1720.0
+    cy = 1317.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        show_login_button = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 1280.0
+    cy = 1317.0
+    output = "DP-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        show_login_button = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 640.0
+    cy = 597.0
+    output = "WL-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        show_login_button = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 256.0
+    box_width = 512.0
+    cx = 312.0
+    cy = 208.0
+    output = "DP-1"
+    rotation = -0.0
+    type = "clock"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 256.0
+    box_width = 512.0
+    cx = 3128.0
+    cy = 208.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        color = "#53EAFD"
+        color2 = "#FFDF20"
+        stat = "cpu_usage"
+        stat2 = "ram_pct"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 256.0
+    box_width = 512.0
+    cx = 3128.0
+    cy = 528.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        color = "#7BF1A8"
+        color2 = "#FFA1AD"
+        stat = "gpu_usage"
+        stat2 = "gpu_vram"
+
+[notification]
+background_opacity = 0.39999999105930328
+monitors = [ "DP-1" ]
+position = "top_left"
+scale = 1.2500000111758709
+
+[osd]
+background_opacity = 0.40000000000000002
+scale = 1.25
+
+    [osd.kinds]
+    media = false
+
+[plugin_settings."alexander/game-launcher"]
+steampoacher_enabled = true
+
+[plugin_settings."blackbartblues/audio-switcher"]
+audio-switcher_placement = "floating"
+audio-switcher_position = "center"
+
+[plugin_settings."blackbartblues/keymap"]
+compositor = "mangowc"
+
+[plugin_settings."nightwatch75/file-search"]
+panel_placement = "floating"
+panel_position = "center"
+show_hidden = true
+
+[plugin_settings."noctalia/mpvpaper"]
+picker_placement = "floating"
+picker_position = "center"
+video_directory = "/home/lemontree/Drive/4TB HDD/Music Visualizer/"
+
+[plugin_settings."noctalia/notes"]
+panel_position = "top_left"
+
+[plugin_settings."noctalia/screen_recorder"]
+audio_source = "default_output"
+directory = "/home/lemontree/Drive/4TB HDD/Raw footages"
+quality = "medium"
+replay_duration = 140
+replay_enabled = true
+video_codec = "av1"
+
+[plugin_settings."noctalia/wallhaven"]
+browser_placement = "floating"
+browser_position = "center"
+
+[plugins]
+auto_update = true
+enabled = [
+    "noctalia/kaomoji",
+    "yogaeru/mango_layout",
+    "noctalia/notes",
+    "oldirtty/color_picker",
+    "rxtsel/portctl",
+    "8bury/mini-docker",
+    "nightwatch75/file-search",
+    "blackbartblues/keymap",
+    "alexander/game-launcher",
+    "blackbartblues/audio-switcher"
+]
+
+    [[plugins.source]]
+    auto_update = true
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    auto_update = true
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+avatar_path = "/var/lib/AccountsService/icons/lemontree"
+font_family = "FantasqueSansM Nerd Font Mono"
+lang = "en"
+polkit_agent = true
+settings_show_advanced = true
+ui_scale = 1.2500000111758709
+
+    [shell.panel]
+    control_center_placement = "floating"
+    control_center_position = "center"
+    session_placement = "floating"
+    session_position = "center"
+    shadow = false
+    transparency_mode = "glass"
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
+
+    [shell.screenshot]
+    directory = "/home/lemontree/Drive/4TB HDD/Screenshot"
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "suspend"
+    enabled = true
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl reboot --firmware-setup"
+    enabled = true
+    glyph = "artboard"
+    label = "UEFI"
+    shortcut = "6"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "killall mango"
+    enabled = true
+    glyph = "terminal-2"
+    label = "TTY"
+    shortcut = "7"
+    variant = "default"
+
+    [shell.shadow]
+    alpha = 0.39999999105930328
+    direction = "down_left"
+
+[system.monitor]
+gpu_poll_seconds = 2
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Rose Pine Moon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "mango", "qt" ]
+    community_ids = [
+        "tauon",
+        "neovim",
+        "fuzzel",
+        "discord",
+        "heroiclauncher",
+        "obs",
+        "papirus-icons",
+        "pi-agent",
+        "yazi",
+        "hyprtoolkit"
+    ]
+
+[wallpaper]
+directory = "/home/lemontree/Drive/4TB Drive/Wallpaper"
+fill_mode = "crop"
+
+    [wallpaper.automation]
+    enabled = false
+    order = "alphabetical"
+
+    [wallpaper.default]
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+
+    [wallpaper.last]
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+
+[widget.CPU]
+capsule = true
+capsule_border = "#53EAFD"
+capsule_fill = "#053345"
+color = "#53EAFD"
+highlight_color = "#A2F4FD"
+type = "sysmon"
+
+[widget.CPU_TEMP]
+capsule = true
+capsule_border = "#FFA1AD"
+capsule_fill = "#4D0218"
+color = "#FFA1AD"
+highlight_color = "#FFCCD3"
+stat = "cpu_temp"
+type = "sysmon"
+
+[widget.GPU]
+capsule = true
+capsule_border = "#7BF1A8"
+capsule_fill = "#032E15"
+color = "#7BF1A8"
+highlight_color = "#B9F8CF"
+stat = "gpu_usage"
+type = "sysmon"
+
+[widget.GPU_TEMP]
+capsule = true
+capsule_border = "#F4A8FF"
+capsule_fill = "#4B004F"
+color = "#F4A8FF"
+highlight_color = "#F6CFFF"
+stat = "gpu_temp"
+type = "sysmon"
+
+[widget.RAM]
+capsule = true
+capsule_border = "#FFDF20"
+capsule_fill = "#432004"
+color = "#FFDF20"
+highlight_color = "#FFF085"
+stat = "ram_used"
+type = "sysmon"
+
+[widget.SWAP]
+capsule = true
+capsule_border = "#D6D3D1"
+capsule_fill = "#0C0A09"
+color = "#D6D3D1"
+highlight_color = "#F5F5F4"
+stat = "swap_pct"
+type = "sysmon"
+
+[widget.VRAM]
+capsule = true
+capsule_border = "#FFB86A"
+capsule_fill = "#441306"
+color = "#FFB86A"
+highlight_color = "#FFD6A7"
+stat = "gpu_vram"
+type = "sysmon"
+
+[widget.active_window]
+capsule = true
+capsule_radius = 6
+max_length = 800
+min_length = 0
+title_scroll = "always"
+
+[widget.audio_visualizer]
+bands = 128
+capsule = true
+capsule_radius = 6
+high_color = "secondary"
+show_when_idle = true
+width = 300.0
+
+[widget.battery]
+capsule = true
+capsule_radius = 6
+
+[widget.bluetooth]
+capsule = true
+capsule_radius = 6
+
+[widget.bongocat]
+script = "scripts/bongocat.lua"
+type = "scripted"
+
+[widget.brightness]
+capsule = true
+capsule_radius = 6
+
+[widget.cat]
+audio_spectrum = true
+tappy_mode = true
+type = "noctalia/bongocat:cat"
+
+[widget.clock]
+capsule = true
+capsule_radius = 6
+color = "primary"
+
+[widget.media]
+color = "primary"
+max_length = 360
+min_length = 0
+title_scroll = "always"
+
+[widget.network]
+capsule = true
+capsule_radius = 6
+
+[widget.network_rx]
+capsule = true
+capsule_border = "#A3B3FF"
+capsule_fill = "#1E1A4D"
+color = "#A3B3FF"
+highlight_color = "#DDD6FF"
+
+[widget.network_tx]
+capsule = true
+capsule_border = "#BBF451"
+capsule_fill = "#192E03"
+color = "#BBF451"
+highlight_color = "#D8F999"
+
+[widget.notifications]
+capsule = true
+capsule_radius = 6
+
+[widget.picker]
+type = "yogaeru/mango_layout:picker"
+
+[widget.picker_2]
+type = "yogaeru/mango_layout:picker"
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
+
+[widget.screen_recorder]
+script = "scripts/screen_recorder.lua"
+type = "scripted"
+
+[widget.sysmon]
+capsule = true
+capsule_radius = 6
+stat = "ram_used"
+
+[widget.taskbar]
+inactive_opacity = 0.75
+show_all_outputs = true
+
+[widget.tray]
+capsule = true
+capsule_radius = 6
+detached_panel = true
+
+[widget.wallpaper]
+font_weight = 700
+
+[widget.widget]
+type = "oldirtty/color_picker:widget"
+
+[widget.widget_2]
+type = "blackbartblues/audio-switcher:widget"
+
+[widget.workspaces]
+capsule_radius = 6
+hide_when_empty = true
