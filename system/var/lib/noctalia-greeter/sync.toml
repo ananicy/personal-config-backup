@@ -1,0 +1,65 @@
+# noctalia-greeter sync.toml (UI + Sync; not managed by Nix)
+# [session] last, [session.power] suspend/reboot/shutdown, [[session.actions]] action/command/label/glyph
+# [appearance] scheme, theme_mode, corner_radius_scale, font_family
+# [appearance.palette] full color role table, [appearance.wallpaper]/[appearance.wallpapers.<connector>]
+# [output] layout/transforms
+
+[appearance]
+corner_radius_scale = 1.0
+scheme = "Synced"
+theme_mode = "dark"
+
+    [appearance.palette]
+    error = "#FFB4AB"
+    hover = "#DDBCE0"
+    on_error = "#690005"
+    on_hover = "#3F2844"
+    on_primary = "#0C305F"
+    on_secondary = "#283041"
+    on_surface = "#E2E2E9"
+    on_surface_variant = "#C4C6D0"
+    on_tertiary = "#3F2844"
+    outline = "#44474E"
+    primary = "#ABC7FF"
+    secondary = "#BEC6DC"
+    shadow = "#000000"
+    surface = "#111318"
+    surface_variant = "#1E2025"
+    tertiary = "#DDBCE0"
+
+    [appearance.wallpaper]
+    fill_mode = "crop"
+    path = "/var/lib/noctalia-greeter/wallpaper.jpeg"
+
+[output]
+layout = "DP-1:0,0; DP-2:3440,0"
+
+[session]
+last = "Mango"
+
+    [[session.actions]]
+    action = "lock"
+
+    [[session.actions]]
+    action = "logout"
+
+    [[session.actions]]
+    action = "suspend"
+
+    [[session.actions]]
+    action = "reboot"
+
+    [[session.actions]]
+    action = "shutdown"
+
+    [[session.actions]]
+    action = "command"
+    command = "systemctl reboot --firmware-setup"
+    glyph = "artboard"
+    label = "UEFI"
+
+    [[session.actions]]
+    action = "command"
+    command = "killall mango"
+    glyph = "terminal-2"
+    label = "TTY"

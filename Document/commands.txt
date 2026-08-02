@@ -2,6 +2,10 @@ sudo cachyos-rate-mirrors
 sudo pacman -Sy archlinux-keyring
 sudo pacman -Syu
 
+git add .
+git commit -m "backup"
+git push
+
 (Localsend) (KDE) (Steam local transfer)
 sudo ufw allow 53317/udp
 sudo ufw allow 53317/tcp

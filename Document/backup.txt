@@ -1,0 +1,32 @@
+sudo rsync -av --delete ~/.config/xdg-desktop-portal ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/nvtop ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/foot ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/nwg-look ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/cava ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/haruna ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/mpv ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/scopebuddy ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/MangoHud ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/btop ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/fastfetch ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/kitty ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/qt6ct ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/qt5ct ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/environment.d ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/mango ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/yazi ~/git/personal-config-backup/.config/
+sudo rsync -av --delete ~/.config/equibop/themes/transparent.theme.css ~/git/personal-config-backup/.config/equibop/themes/
+
+sudo rsync -av --delete ~/Drive/4TB\ Drive/Document/commands.txt ~/git/personal-config-backup/Document/
+sudo rsync -av --delete ~/Drive/4TB\ Drive/Document/backup.txt ~/git/personal-config-backup/Document/
+sudo rsync -av --delete ~/Drive/4TB\ Drive/Document/sync.txt ~/git/personal-config-backup/Document/
+
+sudo rsync -av --delete ~/.local/state/noctalia/settings.toml ~/git/personal-config-backup/.local/state/noctalia/
+sudo rsync -av --delete ~/.local/state/noctalia/state.toml ~/git/personal-config-backup/.local/state/noctalia/
+
+sudo rsync -av --delete /etc/pam.d/greetd ~/git/personal-config-backup/system/etc/pam.d/
+
+sudo rsync -av --delete /etc/greetd/config.toml ~/git/personal-config-backup/system/etc/greetd/
+
+sudo rsync -av --delete /var/lib/noctalia-greeter/greeter.toml ~/git/personal-config-backup/system/var/lib/noctalia-greeter/
+sudo rsync -av --delete /var/lib/noctalia-greeter/sync.toml ~/git/personal-config-backup/system/var/lib/noctalia-greeter/

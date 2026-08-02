@@ -1,0 +1,12 @@
+[appearance]
+hide_logo = true
+password_style = "random"
+
+[cursor]
+path = "/usr/share/icons"
+size = 40
+theme = "breeze_cursors"
+
+[output]
+name = "DP-1"
+scale = 1.5
