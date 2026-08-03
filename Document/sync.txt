@@ -1,10 +1,10 @@
 rsync -av ~/git/personal-config-backup/.config ~/
 
-rsync -av ~/git/personal-config-backup/.local ~/
-
 rsync -av ~/git/personal-config-backup/Document ~/
 
 rsync -av ~/git/personal-config-backup/.themes ~/
+
+rsync -av ~/git/personal-config-backup/.local ~/
 
 sudo rsync -av ~/git/personal-config-backup/system/etc/pam.d /etc/
 
