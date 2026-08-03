@@ -19,6 +19,8 @@ rsync -av --delete ~/.config/equibop/themes/transparent.theme.css ~/git/personal
 rsync -av --delete ~/.config/micro/settings.json ~/git/personal-config-backup/.config/micro/
 rsync -av --delete ~/.config/micro/colorschemes/default-transparent.micro ~/git/personal-config-backup/.config/micro/colorschemes/
 rsync -av --delete ~/.themes/Tahoe-Dark ~/git/personal-config-backup/.themes/
+rsync -av --delete ~/.config/gtk-3.0 ~/git/personal-config-backup/.config/
+rsync -av --delete ~/.config/gtk-4.0 ~/git/personal-config-backup/.config/
 
 rsync -av --delete ~/Drive/4TB\ Drive/Document/commands.txt ~/git/personal-config-backup/Document/
 rsync -av --delete ~/Drive/4TB\ Drive/Document/backup.txt ~/git/personal-config-backup/Document/
