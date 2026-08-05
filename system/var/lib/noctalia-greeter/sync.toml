@@ -12,33 +12,33 @@ theme_mode = "dark"
 
     [appearance.palette]
     error = "#FFB4AB"
-    hover = "#DDBCE0"
+    hover = "#E9B4F7"
     on_error = "#690005"
-    on_hover = "#3F2844"
-    on_primary = "#0C305F"
-    on_secondary = "#283041"
-    on_surface = "#E2E2E9"
-    on_surface_variant = "#C4C6D0"
-    on_tertiary = "#3F2844"
-    outline = "#44474E"
-    primary = "#ABC7FF"
-    secondary = "#BEC6DC"
+    on_hover = "#481E56"
+    on_primary = "#003257"
+    on_secondary = "#203245"
+    on_surface = "#E1E2E7"
+    on_surface_variant = "#C2C7D0"
+    on_tertiary = "#481E56"
+    outline = "#42474F"
+    primary = "#9CCAFF"
+    secondary = "#B6C8E1"
     shadow = "#000000"
-    surface = "#111318"
-    surface_variant = "#1E2025"
-    tertiary = "#DDBCE0"
+    surface = "#111417"
+    surface_variant = "#1D2023"
+    tertiary = "#E9B4F7"
 
     [appearance.wallpaper]
     fill_mode = "crop"
-    path = "/var/lib/noctalia-greeter/wallpaper.jpeg"
+    path = "/var/lib/noctalia-greeter/wallpaper.jpg"
 
     [appearance.wallpapers.DP-1]
     fill_mode = "crop"
-    path = "/var/lib/noctalia-greeter/wallpaper-DP-1.jpeg"
+    path = "/var/lib/noctalia-greeter/wallpaper-DP-1.jpg"
 
     [appearance.wallpapers.DP-2]
     fill_mode = "crop"
-    path = "/var/lib/noctalia-greeter/wallpaper-DP-2.jpeg"
+    path = "/var/lib/noctalia-greeter/wallpaper-DP-2.jpg"
 
 [output]
 layout = "DP-1:0,0; DP-2:3440,0"

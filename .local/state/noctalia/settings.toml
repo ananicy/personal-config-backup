@@ -392,7 +392,7 @@ builtin = "Catppuccin"
 community_palette = "Rose Pine Moon"
 mode = "dark"
 source = "wallpaper"
-wallpaper_scheme = "m3-tonal-spot"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "mango", "qt" ]
@@ -412,22 +412,23 @@ wallpaper_scheme = "m3-tonal-spot"
 [wallpaper]
 directory = "/home/lemontree/Drive/4TB Drive/Wallpaper"
 fill_mode = "crop"
+transition_on_startup = true
 
     [wallpaper.automation]
     enabled = false
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/tk.jpeg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
 
 [widget.CPU]
 capsule = true

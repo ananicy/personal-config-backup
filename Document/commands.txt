@@ -21,3 +21,5 @@ sudo ufw reload
 
 ln -s ~/Drive/4TB\ Drive/PCSX2/ /home/lemontree/.var/app/net.pcsx2.PCSX2/config/
 rsync -av --delete ~/.config/yazi ~/Drive/4TB\ Drive/Backups/.config/
+
+sudo pacman -S cachyos-gaming-meta mangowm noctalia noctalia-greeter xdg-desktop-portal-gtk xdg-desktop-portal-wlr wlr-randr gnome-disk-utility gnome-text-editor gnome-calculator nautilus nwg-look haruna tauon-music-box qpwgraph localsend foot brave-origin-bin zen-browser-bin xwayland-satellite steam gamescope-git gamescope-session-cachyos heroic-games-launcher-bin mangohud mangojuice gthumb proton-vpn-gtk-app proton-mail-bin proton-pass protonplus qt5ct gpu-screen-recorder-ui adw-gtk-theme papirus-icon-theme breeze-cursors yt-dlp github-cli
