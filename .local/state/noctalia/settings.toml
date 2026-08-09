@@ -24,7 +24,6 @@ order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
     margin_ends = 0
     padding = 7
     scale = 2.0000000223517418
-    start = [ "clock", "CPU", "RAM", "SWAP", "CPU_TEMP", "GPU", "VRAM", "GPU_TEMP", "network_rx", "network_tx", "workspaces" ]
     thickness = 45
     widget_spacing = 2
 
@@ -66,7 +65,7 @@ order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
     center = []
     color = "primary"
     contact_shadow = false
-    end = [ "workspaces", "recorder", "tray", "group:g2", "network", "widget_2" ]
+    end = [ "workspaces", "recorder", "tray", "group:g2", "widget_2" ]
     font_weight = 700
     margin_edge = 0
     margin_ends = 0
@@ -260,6 +259,9 @@ audio-switcher_position = "center"
 [plugin_settings."blackbartblues/keymap"]
 compositor = "mangowc"
 
+[plugin_settings."ezequiel/mango_layouts"]
+panel_position = "center"
+
 [plugin_settings."nightwatch75/file-search"]
 panel_placement = "floating"
 panel_position = "center"
@@ -292,12 +294,12 @@ enabled = [
     "yogaeru/mango_layout",
     "noctalia/notes",
     "oldirtty/color_picker",
-    "rxtsel/portctl",
     "8bury/mini-docker",
     "nightwatch75/file-search",
     "blackbartblues/keymap",
     "alexander/game-launcher",
-    "blackbartblues/audio-switcher"
+    "blackbartblues/audio-switcher",
+    "ezequiel/mango_layouts"
 ]
 
     [[plugins.source]]
@@ -392,21 +394,22 @@ builtin = "Catppuccin"
 community_palette = "Rose Pine Moon"
 mode = "dark"
 source = "wallpaper"
-wallpaper_scheme = "m3-content"
+wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "mango", "qt" ]
     community_ids = [
-        "tauon",
-        "neovim",
-        "fuzzel",
-        "discord",
-        "heroiclauncher",
-        "obs",
-        "papirus-icons",
         "pi-agent",
-        "yazi",
-        "hyprtoolkit"
+        "tauon",
+        "discord",
+        "libreoffice",
+        "neovim",
+        "heroiclauncher",
+        "fuzzel",
+        "obs",
+        "hyprtoolkit",
+        "papirus-icons",
+        "yazi"
     ]
 
 [wallpaper]
@@ -419,16 +422,16 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-q2po25.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
 
 [widget.CPU]
 capsule = true
