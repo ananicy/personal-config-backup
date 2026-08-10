@@ -422,16 +422,16 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l8qzoy.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
 
 [widget.CPU]
 capsule = true
