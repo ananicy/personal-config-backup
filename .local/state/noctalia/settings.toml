@@ -1,4 +1,4 @@
-config_version = 8
+config_version = 12
 
 [accessibility]
 ui_scale = 1.2500000111758709
@@ -262,6 +262,9 @@ compositor = "mangowc"
 [plugin_settings."ezequiel/mango_layouts"]
 panel_position = "center"
 
+[plugin_settings."joshuaslate/shelly"]
+interval = 100
+
 [plugin_settings."nightwatch75/file-search"]
 panel_placement = "floating"
 panel_position = "center"
@@ -422,16 +425,16 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-212krm.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
 
 [widget.CPU]
 capsule = true

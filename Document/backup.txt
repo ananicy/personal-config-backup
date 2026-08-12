@@ -21,6 +21,7 @@ rsync -av --delete ~/.config/micro/colorschemes/default-transparent.micro ~/git/
 rsync -av --delete ~/.themes/Tahoe-Dark ~/git/personal-config-backup/.themes/
 rsync -av --delete ~/.config/gtk-3.0 ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/gtk-4.0 ~/git/personal-config-backup/.config/
+rsync -av --delete ~/.config/faugus-launcher ~/git/personal-config-backup/.config/
 
 rsync -av --delete ~/Drive/4TB\ Drive/Document/commands.txt ~/git/personal-config-backup/Document/
 rsync -av --delete ~/Drive/4TB\ Drive/Document/backup.txt ~/git/personal-config-backup/Document/

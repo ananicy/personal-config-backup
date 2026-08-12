@@ -12,21 +12,21 @@ theme_mode = "dark"
 
     [appearance.palette]
     error = "#FFB4AB"
-    hover = "#E9B4F7"
+    hover = "#A3D0BF"
     on_error = "#690005"
-    on_hover = "#481E56"
-    on_primary = "#003257"
-    on_secondary = "#203245"
-    on_surface = "#E1E2E7"
-    on_surface_variant = "#C2C7D0"
-    on_tertiary = "#481E56"
-    outline = "#42474F"
-    primary = "#9CCAFF"
-    secondary = "#B6C8E1"
+    on_hover = "#08372B"
+    on_primary = "#303300"
+    on_secondary = "#313219"
+    on_surface = "#E5E3D6"
+    on_surface_variant = "#C9C7B6"
+    on_tertiary = "#08372B"
+    outline = "#47473B"
+    primary = "#C7CC79"
+    secondary = "#C8C9A6"
     shadow = "#000000"
-    surface = "#111417"
-    surface_variant = "#1D2023"
-    tertiary = "#E9B4F7"
+    surface = "#14140C"
+    surface_variant = "#202018"
+    tertiary = "#A3D0BF"
 
     [appearance.wallpaper]
     fill_mode = "crop"
@@ -41,7 +41,7 @@ theme_mode = "dark"
     path = "/var/lib/noctalia-greeter/wallpaper-DP-2.jpg"
 
 [output]
-layout = "DP-1:0,0; DP-2:3440,0"
+layout = "DP-1:0,360; DP-2:3440,0"
 transforms = "DP-1:normal; DP-2:normal"
 
 [session]
