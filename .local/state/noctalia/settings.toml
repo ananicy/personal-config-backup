@@ -351,7 +351,7 @@ enabled = [
 
 [shell]
 avatar_path = "/home/lemontree/Drive/4TB Drive/Avatar Cut Out/lemon_tree_cutout.png"
-font_family = "Noto Sans Mono"
+font_family = "Noto Sans Mono Medium"
 lang = "en"
 polkit_agent = true
 settings_show_advanced = true
