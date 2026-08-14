@@ -90,7 +90,7 @@ order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
     center = []
     color = "primary"
     contact_shadow = false
-    end = [ "workspaces", "recorder", "tray", "group:g2", "widget_2" ]
+    end = [ "workspaces", "recorder", "tray", "group:g2", "widget_2", "mpvpaper" ]
     font_weight = 700
     margin_edge = 0
     margin_ends = 0
@@ -301,9 +301,10 @@ panel_position = "center"
 show_hidden = true
 
 [plugin_settings."noctalia/mpvpaper"]
+auto_pause = false
 picker_placement = "floating"
 picker_position = "center"
-video_directory = "/home/lemontree/Drive/4TB HDD/Music Visualizer/"
+video_directory = "/home/lemontree/Drive/4TB HDD/Music Visualizer"
 
 [plugin_settings."noctalia/notes"]
 panel_position = "top_left"
@@ -332,7 +333,8 @@ enabled = [
     "blackbartblues/keymap",
     "alexander/game-launcher",
     "blackbartblues/audio-switcher",
-    "ezequiel/mango_layouts"
+    "ezequiel/mango_layouts",
+    "noctalia/mpvpaper"
 ]
 
     [[plugins.source]]
@@ -349,10 +351,11 @@ enabled = [
 
 [shell]
 avatar_path = "/home/lemontree/Drive/4TB Drive/Avatar Cut Out/lemon_tree_cutout.png"
-font_family = "FantasqueSansM Nerd Font Mono"
+font_family = "Noto Sans Mono"
 lang = "en"
 polkit_agent = true
 settings_show_advanced = true
+settings_window_translucent = true
 ui_scale = 1.2500000111758709
 
     [shell.panel]
@@ -361,6 +364,7 @@ ui_scale = 1.2500000111758709
     session_placement = "floating"
     session_position = "center"
     shadow = false
+    transparency_mode = "glass"
     wallpaper_placement = "floating"
     wallpaper_position = "center"
 
@@ -438,6 +442,7 @@ wallpaper_scheme = "m3-tonal-spot"
         "libreoffice",
         "neovim",
         "heroiclauncher",
+        "steam",
         "fuzzel",
         "obs",
         "hyprtoolkit",
@@ -455,16 +460,16 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-jeew7y.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
 
 [widget.CPU]
 capsule = true
@@ -577,6 +582,9 @@ color = "primary"
 max_length = 360
 min_length = 0
 title_scroll = "always"
+
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
 
 [widget.network]
 capsule = true
