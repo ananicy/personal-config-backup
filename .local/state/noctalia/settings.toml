@@ -1,96 +1,27 @@
-config_version = 12
+config_version = 14
 
 [accessibility]
 ui_scale = 1.2500000111758709
 
 [audio]
 enable_sounds = true
-notification_sound = "/home/lemontree/Drive/4TB Drive/Sound effects/Hint.wav"
+notification_sound = "/home/lemontree/Drive/4TB Drive/Sound effects/terminal_on.mp3"
 sound_volume = 0.99999997764825821
 volume_change_sound = "/home/lemontree/Drive/4TB Drive/Sound effects/Choosing.wav"
 
 [bar]
-order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
-
-    [bar.2nd-Bar]
-    background_opacity = 0.0
-    capsule = true
-    capsule_border = "primary"
-    center = []
-    contact_shadow = false
-    end = [ "media" ]
-    font_weight = 700
-    margin_edge = 0
-    margin_ends = 0
-    padding = 7
-    scale = 2.0000000223517418
-    start = [
-        "CPU",
-        "CPU_TEMP",
-        "RAM",
-        "SWAP",
-        "GPU",
-        "GPU_TEMP",
-        "VRAM",
-        "network_rx",
-        "network_tx",
-        "workspaces",
-        "group:g1"
-    ]
-    thickness = 45
-    widget_spacing = 2
-
-        [bar.2nd-Bar.monitor.DP-1]
-        contact_shadow = false
-        enabled = false
-        shadow = false
-
-        [[bar.2nd-Bar.capsule_group]]
-        accordion = false
-        accordion_direction = "end"
-        border = "primary"
-        enabled = true
-        fill = "surface_variant"
-        id = "g1"
-        members = [ "date", "clock" ]
-        opacity = 1.0
-        padding = 6.0
-        widget_spacing = 8
-
-    [bar.3rd-Bar]
-    background_opacity = 0.0
-    capsule = true
-    capsule_border = "primary"
-    capsule_opacity = 0.4999999888241291
-    capsule_radius = 6
-    center = []
-    color = "primary"
-    contact_shadow = false
-    enabled = false
-    end = [ "workspaces", "audio_visualizer" ]
-    font_weight = 700
-    margin_edge = 0
-    margin_ends = 0
-    padding = 7
-    position = "left"
-    scale = 2.0000000223517418
-    start = [ "clock" ]
-    thickness = 45
-    widget_spacing = 2
-
-        [bar.3rd-Bar.monitor.DP-1]
-        enabled = false
+order = [ "Bar" ]
 
     [bar.Bar]
     background_opacity = 0.0
     capsule = true
     capsule_border = "primary"
-    capsule_opacity = 0.4999999888241291
+    capsule_opacity = 0.39999999105930328
     capsule_radius = 6
     center = []
     color = "primary"
     contact_shadow = false
-    end = [ "workspaces", "recorder", "tray", "group:g2", "widget_2", "mpvpaper" ]
+    end = [ "workspaces", "recorder", "tray", "group:g2", "widget_2", "bar" ]
     font_weight = 700
     margin_edge = 0
     margin_ends = 0
@@ -101,10 +32,32 @@ order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
     widget_spacing = 2
 
         [bar.Bar.monitor.DP-2]
-        contact_shadow = false
-        enabled = false
-        position = "left"
-        shadow = false
+        end = []
+        start = [ "group:g1", "RAM_CUSTOM", "group:g2", "VRAM", "UP", "DOWN" ]
+
+            [[bar.Bar.monitor.DP-2.capsule_group]]
+            accordion = false
+            accordion_direction = "end"
+            border = "#53EAFD"
+            enabled = true
+            fill = "surface_variant"
+            id = "g1"
+            members = [ "CPU_CUSTOM", "CPU_TEMP" ]
+            opacity = 0.39999997615814209
+            padding = 6.0
+            radius = 6.0
+
+            [[bar.Bar.monitor.DP-2.capsule_group]]
+            accordion = false
+            accordion_direction = "end"
+            border = "#7BF1A8"
+            enabled = true
+            fill = "surface_variant"
+            id = "g2"
+            members = [ "GPU", "GPU_TEMP" ]
+            opacity = 0.39999997615814209
+            padding = 6.0
+            radius = 6.0
 
         [[bar.Bar.capsule_group]]
         accordion = false
@@ -114,10 +67,10 @@ order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
         fill = "surface_variant"
         id = "g1"
         members = [ "date", "clock" ]
-        opacity = 0.5
+        opacity = 0.40000000596046448
         padding = 6.0
         radius = 6.0
-        widget_spacing = 8
+        widget_spacing = 7
 
         [[bar.Bar.capsule_group]]
         accordion = false
@@ -127,9 +80,10 @@ order = [ "Bar", "2nd-Bar", "3rd-Bar" ]
         fill = "surface_variant"
         id = "g2"
         members = [ "notifications", "bluetooth", "widget" ]
-        opacity = 0.5
+        opacity = 0.40000000596046448
         padding = 6.0
         radius = 6.0
+        widget_spacing = 7
 
 [control_center]
 sidebar = "full"
@@ -147,8 +101,30 @@ widget_order = []
     [desktop_widgets.widget]
 
 [dock]
-monitors = [ "DP-2" ]
+background_opacity = 0.0099999997764825821
+border = "primary"
+border_width = 4.0
+enabled = false
+icon_size = 64
+launcher_custom_image = "/home/lemontree/Drive/4TB Drive/Avatar Cut Out/dibujo-24.png"
+margin_edge = 2
+monitors = [ "DP-1" ]
+pinned = [
+    "steam",
+    "com.shellyorg.shelly",
+    "brave-origin",
+    "org.gnome.TextEditor",
+    "proton-pass",
+    "proton.vpn.app.gtk",
+    "proton-mail",
+    "com.ktechpit.ultimate-media-downloader",
+    "org.cachyos.scx-manager",
+    "org.cachyos.KernelManager",
+    "localsend"
+]
+reserve_space = false
 shadow = false
+show_dots = true
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -178,6 +154,7 @@ blur_intensity = 0.74999998323619366
 enabled = true
 schema_version = 1
 widget_order = [
+    "lockscreen-login-box@HDMI-A-1",
     "lockscreen-login-box@WL-1",
     "lockscreen-login-box@DP-2",
     "lockscreen-login-box@DP-1",
@@ -192,56 +169,117 @@ widget_order = [
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
-    box_height = 70.0
-    box_width = 400.0
-    cx = 1720.0
+    box_height = 196.0
+    box_width = 720.0
+    cx = 1720.0001220703125
     cy = 1317.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        center_password_text = false
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
-    box_height = 70.0
-    box_width = 400.0
-    cx = 1280.0
-    cy = 1317.0
+    box_height = 196.0
+    box_width = 720.0
+    cx = 480.00009155273438
+    cy = 1560.8890380859375
     output = "DP-2"
+    placement_height = 2560.0
+    placement_width = 1440.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        center_password_text = false
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1720.0
+    cy = 1197.3333740234375
+    output = "HDMI-A-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
-    box_height = 70.0
-    box_width = 400.0
+    box_height = 196.0
+    box_width = 720.0
     cx = 640.0
     cy = 597.0
     output = "WL-1"
+    placement_height = 0.0
+    placement_width = 0.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        center_password_text = false
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 256.0
     box_width = 512.0
-    cx = 312.0
+    cx = 312.00003051757812
     cy = 208.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
     rotation = -0.0
     type = "clock"
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
     box_height = 256.0
     box_width = 512.0
-    cx = 3128.0
+    cx = 3128.000244140625
     cy = 208.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
     rotation = 0.0
     type = "sysmon"
 
@@ -254,9 +292,11 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
     box_height = 256.0
     box_width = 512.0
-    cx = 3128.0
+    cx = 3128.000244140625
     cy = 528.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
     rotation = 0.0
     type = "sysmon"
 
@@ -267,17 +307,21 @@ widget_order = [
         stat2 = "gpu_vram"
 
 [notification]
-background_opacity = 0.39999999105930328
+background_opacity = 0.0099999997764825821
+layer = "overlay"
 monitors = [ "DP-1" ]
 position = "top_left"
 scale = 1.2500000111758709
 
 [osd]
-background_opacity = 0.40000000000000002
+background_opacity = 0.0099999997764825821
 scale = 1.25
 
     [osd.kinds]
     media = false
+
+[plugin_settings."8bury/mini-docker"]
+manager_layer = "overlay"
 
 [plugin_settings."alexander/game-launcher"]
 steampoacher_enabled = true
@@ -288,8 +332,11 @@ audio-switcher_position = "center"
 
 [plugin_settings."blackbartblues/keymap"]
 compositor = "mangowc"
+panel_layer = "overlay"
 
 [plugin_settings."ezequiel/mango_layouts"]
+list_mode = true
+panel_layer = "overlay"
 panel_position = "center"
 
 [plugin_settings."joshuaslate/shelly"]
@@ -307,6 +354,7 @@ picker_position = "center"
 video_directory = "/home/lemontree/Drive/4TB HDD/Music Visualizer"
 
 [plugin_settings."noctalia/notes"]
+panel_layer = "overlay"
 panel_position = "top_left"
 
 [plugin_settings."noctalia/screen_recorder"]
@@ -321,8 +369,13 @@ video_codec = "av1"
 browser_placement = "floating"
 browser_position = "center"
 
+[plugin_settings."prponkshe/mango-displays"]
+panel_layer = "overlay"
+panel_placement = "floating"
+panel_position = "center"
+
 [plugins]
-auto_update = true
+auto_update = "all"
 enabled = [
     "noctalia/kaomoji",
     "yogaeru/mango_layout",
@@ -331,10 +384,10 @@ enabled = [
     "8bury/mini-docker",
     "nightwatch75/file-search",
     "blackbartblues/keymap",
-    "alexander/game-launcher",
     "blackbartblues/audio-switcher",
     "ezequiel/mango_layouts",
-    "noctalia/mpvpaper"
+    "noctalia/mpvpaper",
+    "prponkshe/mango-displays"
 ]
 
     [[plugins.source]]
@@ -351,12 +404,26 @@ enabled = [
 
 [shell]
 avatar_path = "/home/lemontree/Drive/4TB Drive/Avatar Cut Out/lemon_tree_cutout.png"
-font_family = "Noto Sans Mono Medium"
+font_family = "Noto Sans Mono"
 lang = "en"
 polkit_agent = true
 settings_show_advanced = true
 settings_window_translucent = true
 ui_scale = 1.2500000111758709
+
+    [shell.launcher]
+    pinned = [
+        "steam",
+        "org.gnome.TextEditor",
+        "com.shellyorg.shelly",
+        "brave-origin",
+        "proton-pass",
+        "localsend",
+        "org.gnome.Calculator",
+        "org.cachyos.KernelManager",
+        "org.cachyos.scx-manager",
+        "heroic"
+    ]
 
     [shell.panel]
     control_center_placement = "floating"
@@ -436,14 +503,15 @@ wallpaper_scheme = "m3-tonal-spot"
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "mango", "qt" ]
     community_ids = [
-        "pi-agent",
         "tauon",
         "discord",
         "libreoffice",
+        "micro",
         "neovim",
         "heroiclauncher",
         "steam",
         "fuzzel",
+        "fastfetch",
         "obs",
         "hyprtoolkit",
         "papirus-icons",
@@ -452,7 +520,6 @@ wallpaper_scheme = "m3-tonal-spot"
 
 [wallpaper]
 directory = "/home/lemontree/Drive/4TB Drive/Wallpaper"
-fill_mode = "crop"
 transition_on_startup = true
 
     [wallpaper.automation]
@@ -460,82 +527,124 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-vpoem3.jpg"
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
 
-[widget.CPU]
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-6k38g7.jpg"
+
+[widget.CLOCK_CUSTOM]
+capsule = true
+capsule_border = "#FFFFFF"
+capsule_fill = "#FFFFFF"
+capsule_foreground = "#FFFFFF"
+capsule_opacity = 0.01
+color = "#FFFFFF"
+icon_color = "#FFFFFF"
+type = "clock"
+
+[widget.CPU_CUSTOM]
 capsule = true
 capsule_border = "#53EAFD"
-capsule_fill = "#053345"
+capsule_fill = "#53EAFD"
+capsule_foreground = "#53EAFD"
+capsule_opacity = 0.01
 color = "#53EAFD"
-highlight_color = "#A2F4FD"
+highlight_color = "#53EAFD"
+icon_color = "#53EAFD"
 type = "sysmon"
 
 [widget.CPU_TEMP]
 capsule = true
-capsule_border = "#FFA1AD"
-capsule_fill = "#4D0218"
-color = "#FFA1AD"
-highlight_color = "#FFCCD3"
+capsule_border = "#53EAFD"
+capsule_fill = "#53EAFD"
+capsule_foreground = "#53EAFD"
+capsule_opacity = 0.01
+color = "#53EAFD"
+highlight_color = "#53EAFD"
+icon_color = "#53EAFD"
 stat = "cpu_temp"
+type = "sysmon"
+
+[widget.DOWN]
+capsule = true
+capsule_border = "#A3B3FF"
+capsule_foreground = "#A3B3FF"
+capsule_opacity = 0.40000000000000002
+color = "#A3B3FF"
+highlight_color = "#A3B3FF"
+icon_color = "#A3B3FF"
+stat = "net_rx"
 type = "sysmon"
 
 [widget.GPU]
 capsule = true
 capsule_border = "#7BF1A8"
-capsule_fill = "#032E15"
+capsule_fill = "#7BF1A8"
+capsule_foreground = "#7BF1A8"
+capsule_opacity = 0.01
 color = "#7BF1A8"
-highlight_color = "#B9F8CF"
+highlight_color = "#7BF1A8"
+icon_color = "#7BF1A8"
 stat = "gpu_usage"
 type = "sysmon"
 
 [widget.GPU_TEMP]
 capsule = true
-capsule_border = "#F4A8FF"
-capsule_fill = "#4B004F"
-color = "#F4A8FF"
-highlight_color = "#F6CFFF"
+capsule_border = "#7BF1A8"
+capsule_fill = "#7BF1A8"
+capsule_foreground = "#7BF1A8"
+color = "#7BF1A8"
+highlight_color = "#7BF1A8"
+icon_color = "#7BF1A8"
 stat = "gpu_temp"
 type = "sysmon"
 
-[widget.RAM]
+[widget.RAM_CUSTOM]
 capsule = true
-capsule_border = "#FFDF20"
-capsule_fill = "#432004"
-color = "#FFDF20"
-highlight_color = "#FFF085"
+capsule_border = "#FFA1AD"
+capsule_foreground = "#FFA1AD"
+capsule_opacity = 0.40000000000000002
+color = "#FFA1AD"
+highlight_color = "#FFA1AD"
+icon_color = "#FFA1AD"
 stat = "ram_used"
 type = "sysmon"
 
-[widget.SWAP]
+[widget.UP]
 capsule = true
-capsule_border = "#D6D3D1"
-capsule_fill = "#0C0A09"
-color = "#D6D3D1"
-highlight_color = "#F5F5F4"
-stat = "swap_pct"
+capsule_border = "#F4A8FF"
+capsule_foreground = "#F4A8FF"
+capsule_opacity = 0.40000000000000002
+color = "#F4A8FF"
+highlight_color = "#F4A8FF"
+icon_color = "#F4A8FF"
+stat = "net_tx"
 type = "sysmon"
 
 [widget.VRAM]
 capsule = true
-capsule_border = "#FFB86A"
-capsule_fill = "#441306"
-color = "#FFB86A"
-highlight_color = "#FFD6A7"
-stat = "gpu_vram"
+capsule_border = "#FFDF20"
+capsule_foreground = "#FFDF20"
+capsule_opacity = 0.40000000000000002
+color = "#FFDF20"
+highlight_color = "#FFDF20"
+icon_color = "#FFDF20"
+stat = "gpu_vram_used"
 type = "sysmon"
 
 [widget.active_window]
 capsule = true
 capsule_radius = 6
+enabled = false
 max_length = 800
 min_length = 0
 title_scroll = "always"
@@ -547,6 +656,9 @@ capsule_radius = 6
 high_color = "secondary"
 show_when_idle = true
 width = 300.0
+
+[widget.bar]
+type = "prponkshe/mango-displays:bar"
 
 [widget.battery]
 capsule = true
@@ -572,37 +684,21 @@ type = "noctalia/bongocat:cat"
 [widget.clock]
 capsule = true
 capsule_radius = 6
-color = "primary"
 
 [widget.date]
+capsule_opacity = 0.0
 color = "primary"
 
 [widget.media]
-color = "primary"
-max_length = 360
+capsule = true
+capsule_opacity = 0.40000000000000002
+max_length = 800
 min_length = 0
 title_scroll = "always"
-
-[widget.mpvpaper]
-type = "noctalia/mpvpaper:mpvpaper"
 
 [widget.network]
 capsule = true
 capsule_radius = 6
-
-[widget.network_rx]
-capsule = true
-capsule_border = "#A3B3FF"
-capsule_fill = "#1E1A4D"
-color = "#A3B3FF"
-highlight_color = "#DDD6FF"
-
-[widget.network_tx]
-capsule = true
-capsule_border = "#BBF451"
-capsule_fill = "#192E03"
-color = "#BBF451"
-highlight_color = "#D8F999"
 
 [widget.notifications]
 capsule = true
@@ -623,8 +719,15 @@ type = "scripted"
 
 [widget.sysmon]
 capsule = true
+capsule_border = "#7BF1A8"
+capsule_fill = "#7BF1A8"
+capsule_foreground = "#7BF1A8"
+capsule_opacity = 0.01
 capsule_radius = 6
-stat = "ram_used"
+color = "#7BF1A8"
+highlight_color = "#016630"
+icon_color = "#7BF1A8"
+stat = "gpu_usage"
 
 [widget.taskbar]
 inactive_opacity = 0.75

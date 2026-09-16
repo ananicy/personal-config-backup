@@ -1,6 +1,9 @@
 sudo cachyos-rate-mirrors
 sudo pacman -Sy archlinux-keyring
 sudo pacman -Syu
+pacman -Qdt
+pacman -Qm
+sudo pacman -Rsn $(pacman -Qdtq)
 
 git add .
 git commit -m "backup"
