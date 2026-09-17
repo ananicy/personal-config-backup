@@ -436,7 +436,7 @@ ui_scale = 1.2500000111758709
     wallpaper_position = "center"
 
     [shell.screenshot]
-    directory = "/home/lemontree/Drive/4TB HDD/Screenshot"
+    directory = "/home/lemontree/Pictures/Screenshot"
 
     [[shell.session.actions]]
     action = "lock"
@@ -519,7 +519,7 @@ wallpaper_scheme = "m3-tonal-spot"
     ]
 
 [wallpaper]
-directory = "/home/lemontree/Drive/4TB Drive/Wallpaper"
+directory = "/home/lemontree/Pictures/Wallpaper"
 transition_on_startup = true
 
     [wallpaper.automation]
@@ -527,16 +527,16 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-6k38g7.jpg"
@@ -582,6 +582,7 @@ capsule_opacity = 0.40000000000000002
 color = "#A3B3FF"
 highlight_color = "#A3B3FF"
 icon_color = "#A3B3FF"
+network_speed_unit = "mb"
 stat = "net_rx"
 type = "sysmon"
 
@@ -627,6 +628,7 @@ capsule_opacity = 0.40000000000000002
 color = "#F4A8FF"
 highlight_color = "#F4A8FF"
 icon_color = "#F4A8FF"
+network_speed_unit = "mb"
 stat = "net_tx"
 type = "sysmon"
 
