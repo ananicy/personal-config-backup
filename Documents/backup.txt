@@ -24,10 +24,10 @@ rsync -av --delete ~/.config/gtk-4.0 ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/faugus-launcher ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.local/share/TauonMusicBox/tauon.conf ~/git/personal-config-backup/.local/share/TauonMusicBox/
 
-rsync -av --delete ~/Drive/4TB\ Drive/Document/commands.txt ~/git/personal-config-backup/Document/
-rsync -av --delete ~/Drive/4TB\ Drive/Document/backup.txt ~/git/personal-config-backup/Document/
-rsync -av --delete ~/Drive/4TB\ Drive/Document/sync.txt ~/git/personal-config-backup/Document/
-rsync -av --delete ~/Drive/4TB\ Drive/Document/Default.m3u8 ~/git/personal-config-backup/Document/
+rsync -av --delete ~/Drive/4TB\ Drive/Documents/commands.txt ~/git/personal-config-backup/Documents/
+rsync -av --delete ~/Drive/4TB\ Drive/Documents/backup.txt ~/git/personal-config-backup/Documents/
+rsync -av --delete ~/Drive/4TB\ Drive/Documents/sync.txt ~/git/personal-config-backup/Documents/
+rsync -av --delete ~/Drive/4TB\ Drive/Documents/Default.m3u8 ~/git/personal-config-backup/Documents/
 
 rsync -av --delete ~/.local/state/noctalia/settings.toml ~/git/personal-config-backup/.local/state/noctalia/
 rsync -av --delete ~/.local/state/noctalia/state.toml ~/git/personal-config-backup/.local/state/noctalia/

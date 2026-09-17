@@ -1,6 +1,6 @@
 rsync -av ~/git/personal-config-backup/.config ~/
 
-rsync -av ~/git/personal-config-backup/Document ~/
+rsync -av ~/git/personal-config-backup/Documents ~/
 
 rsync -av ~/git/personal-config-backup/.themes ~/
 
