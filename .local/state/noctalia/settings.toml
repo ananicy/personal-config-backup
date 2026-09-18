@@ -132,7 +132,7 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     [idle.behavior.lock]
     action = "lock"
     enabled = true
-    timeout = 900.0
+    timeout = 300.0
 
     [idle.behavior.lock-and-suspend]
     action = "lock_and_suspend"
@@ -145,7 +145,7 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     timeout = 660.0
 
 [location]
-address = "Chicago"
+address = "BROOKSHIRE, USA"
 
 [lockscreen]
 blur_intensity = 0.74999998323619366
@@ -160,7 +160,10 @@ widget_order = [
     "lockscreen-login-box@DP-1",
     "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000002",
-    "lockscreen-widget-0000000000000003"
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-widget-0000000000000006"
 ]
 
     [lockscreen_widgets.grid]
@@ -170,9 +173,9 @@ widget_order = [
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
     box_height = 196.0
-    box_width = 720.0
-    cx = 1720.0001220703125
-    cy = 1317.0
+    box_width = 784.0
+    cx = 1720.0
+    cy = 1264.0
     output = "DP-1"
     placement_height = 1440.0
     placement_width = 3440.0
@@ -192,9 +195,9 @@ widget_order = [
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
     box_height = 196.0
-    box_width = 720.0
-    cx = 480.00009155273438
-    cy = 1560.8890380859375
+    box_width = 784.0
+    cx = 720.0
+    cy = 226.0
     output = "DP-2"
     placement_height = 2560.0
     placement_width = 1440.0
@@ -272,6 +275,9 @@ widget_order = [
     rotation = -0.0
     type = "clock"
 
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        clock_style = "digital"
+
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
     box_height = 256.0
     box_width = 512.0
@@ -286,6 +292,7 @@ widget_order = [
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
         color = "#53EAFD"
         color2 = "#FFDF20"
+        display = "graph"
         stat = "cpu_usage"
         stat2 = "ram_pct"
 
@@ -305,6 +312,48 @@ widget_order = [
         color2 = "#FFA1AD"
         stat = "gpu_usage"
         stat2 = "gpu_vram"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 256.0
+    box_width = 512.0
+    cx = 3133.000244140625
+    cy = 848.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        color = "#FCD69F"
+        color2 = "#CDBADB"
+        stat = "cpu_temp"
+        stat2 = "gpu_temp"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 256.0
+    box_width = 512.0
+    cx = 312.00003051757812
+    cy = 528.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        show_forecast = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 576.0
+    box_width = 768.0
+    cx = 1720.0
+    cy = 368.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "calendar"
 
 [notification]
 background_opacity = 0.0099999997764825821
@@ -530,13 +579,13 @@ transition_on_startup = true
     path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
 
     [wallpaper.last]
-    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Pictures/Wallpaper/wallhaven-13jg59.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Pictures/Wallpaper/wallhaven-13jg59.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/lemontree/Drive/4TB HDD/Wallpaper/wallhaven-l3xlwq.jpg"
+    path = "/home/lemontree/Pictures/Wallpaper/wallhaven-x6zlz3(portrait).jpg"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/lemontree/Drive/4TB Drive/Wallpaper/wallhaven-6k38g7.jpg"
