@@ -18,7 +18,7 @@
     "show-hidden": "False",
     "show-donate": "False",
     "donate-last": "2026-08",
-    "playtime": "197971",
+    "playtime": "199531",
     "gamepad-navigation": "False",
     "backup-auto-enabled": "False",
     "backup-frequency": "daily",
@@ -43,7 +43,7 @@
     "automatic-updates": "True",
     "header-bar": "False",
     "interface-theme": "system",
-    "accent-color": "system",
+    "accent-color": "rgb(61,174,233)",
     "theme-engine": "adwaita",
     "steamgriddb-api-key": "dac03f0b6e87e6a427afad51654d6c9b",
     "background-mode": "default",
@@ -53,5 +53,14 @@
     "categories-enabled": "False",
     "sort-enabled": "False",
     "steamgriddb-enabled": "True",
-    "auto-create-shortcuts": "False"
+    "auto-create-shortcuts": "False",
+    "accent-mode": "system",
+    "overview-color-mode": "default",
+    "background-color": "rgb(61,174,233)",
+    "overview-color": "rgb(61,174,233)",
+    "grid-position": "Middle",
+    "grid-orientation": "Vertical",
+    "grid-max-children-enabled": "False",
+    "grid-max-children-per-line": "20",
+    "overview-enabled": "False"
 }

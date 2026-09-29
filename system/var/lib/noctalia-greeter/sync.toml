@@ -12,25 +12,25 @@ theme_mode = "dark"
 
     [appearance.palette]
     error = "#FFB4AB"
-    hover = "#D4C78E"
+    hover = "#A0CFCD"
     on_error = "#690005"
-    on_hover = "#383006"
-    on_primary = "#552008"
-    on_secondary = "#442A20"
-    on_surface = "#F1DFD9"
-    on_surface_variant = "#D8C2BA"
-    on_tertiary = "#383006"
-    outline = "#53433E"
-    primary = "#FFB598"
-    secondary = "#E7BEAE"
+    on_hover = "#003736"
+    on_primary = "#1C3703"
+    on_secondary = "#29341F"
+    on_surface = "#E2E3D9"
+    on_surface_variant = "#C4C8BA"
+    on_tertiary = "#003736"
+    outline = "#44483E"
+    primary = "#AED18D"
+    secondary = "#BECBAE"
     shadow = "#000000"
-    surface = "#1A110E"
-    surface_variant = "#271E1A"
-    tertiary = "#D4C78E"
+    surface = "#11140E"
+    surface_variant = "#1E211A"
+    tertiary = "#A0CFCD"
 
     [appearance.wallpaper]
     fill_mode = "crop"
-    path = "/var/lib/noctalia-greeter/wallpaper.jpg"
+    path = "/var/lib/noctalia-greeter/wallpaper.jpeg"
 
     [appearance.wallpapers.DP-1]
     fill_mode = "crop"
@@ -39,10 +39,6 @@ theme_mode = "dark"
     [appearance.wallpapers.DP-2]
     fill_mode = "crop"
     path = "/var/lib/noctalia-greeter/wallpaper-DP-2.jpg"
-
-    [appearance.wallpapers.HDMI-A-1]
-    fill_mode = "crop"
-    path = "/var/lib/noctalia-greeter/wallpaper-HDMI-A-1.jpg"
 
 [output]
 layout = "DP-2:0,0; DP-1:1440,0"
