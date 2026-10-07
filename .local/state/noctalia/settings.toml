@@ -9,7 +9,7 @@ sound_volume = 0.99999997764825821
 volume_change_sound = "/home/lemontree/Drive/4TB Drive/Sound effects/Choosing.wav"
 
 [bar]
-order = [ "Fullscreen-Bar", "Default-Bar" ]
+order = [ "Default-Bar", "Fullscreen-Bar" ]
 
     [bar.Default-Bar]
     background_opacity = 0.0
@@ -17,16 +17,16 @@ order = [ "Fullscreen-Bar", "Default-Bar" ]
     capsule_border = "primary"
     capsule_opacity = 0.39999999105930328
     capsule_radius = 6
-    center = []
+    center = [ "media" ]
     color = "primary"
     contact_shadow = false
-    end = [ "workspaces", "recorder", "group:g2", "widget_2" ]
+    end = [ "recorder", "group:g2", "widget_2" ]
     font_weight = 700
     margin_edge = 0
     margin_ends = 0
     padding = 7
     scale = 2.0000000223517418
-    start = [ "group:g1", "media", "active_window" ]
+    start = [ "group:g1", "active_window", "workspaces" ]
     thickness = 45
     widget_spacing = 2
 
@@ -549,7 +549,6 @@ enabled = [
     "blackbartblues/audio-switcher",
     "ezequiel/mango_layouts",
     "noctalia/mpvpaper",
-    "prponkshe/mango-displays",
     "alexander/game-launcher",
     "nilsonlinux/speedtest-meter"
 ]
@@ -666,7 +665,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "mango", "qt" ]
+    builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
     community_ids = [
         "tauon",
         "brave-origin",
@@ -867,6 +866,7 @@ color = "primary"
 [widget.media]
 capsule = true
 capsule_opacity = 0.40000000000000002
+enabled = false
 max_length = 800
 min_length = 0
 title_scroll = "always"

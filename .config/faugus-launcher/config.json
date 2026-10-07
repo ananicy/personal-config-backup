@@ -18,7 +18,7 @@
     "show-hidden": "False",
     "show-donate": "False",
     "donate-last": "2026-08",
-    "playtime": "199531",
+    "playtime": "203911",
     "gamepad-navigation": "False",
     "backup-auto-enabled": "False",
     "backup-frequency": "daily",
@@ -33,7 +33,7 @@
     "sdl-enabled": "False",
     "no-sleep-enabled": "False",
     "auto-close-on-launch": "True",
-    "labels-enabled": "False",
+    "labels-enabled": "True",
     "logging-enabled": "False",
     "autostart-enabled": "False",
     "minimized-startup-enabled": "False",
@@ -62,5 +62,5 @@
     "grid-orientation": "Vertical",
     "grid-max-children-enabled": "False",
     "grid-max-children-per-line": "20",
-    "overview-enabled": "False"
+    "overview-enabled": "True"
 }
