@@ -17,7 +17,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
     capsule_border = "primary"
     capsule_opacity = 0.39999999105930328
     capsule_radius = 6
-    center = [ "media" ]
+    center = [ "group:g3" ]
     color = "primary"
     contact_shadow = false
     end = [ "recorder", "group:g2", "widget_2" ]
@@ -26,11 +26,12 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
     margin_ends = 0
     padding = 7
     scale = 2.0000000223517418
-    start = [ "group:g1", "active_window", "workspaces" ]
+    start = [ "group:g1", "workspaces" ]
     thickness = 45
     widget_spacing = 2
 
         [bar.Default-Bar.monitor.DP-2]
+        center = []
         end = []
         start = [ "group:g1", "RAM_CUSTOM", "group:g2", "VRAM", "UP", "DOWN" ]
 
@@ -38,51 +39,78 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             accordion = false
             accordion_direction = "end"
             border = "#53EAFD"
+            border_width = 1.0
             enabled = true
             fill = "surface_variant"
             id = "g1"
-            members = [ "CPU_CUSTOM", "CPU_TEMP" ]
+            members = [ "CPU_CUSTOM", "custom_button_blue", "CPU_TEMP" ]
             opacity = 0.39999997615814209
             padding = 6.0
             radius = 6.0
+            widget_spacing = 0
 
             [[bar.Default-Bar.monitor.DP-2.capsule_group]]
             accordion = false
             accordion_direction = "end"
             border = "#7BF1A8"
+            border_width = 1.0
             enabled = true
             fill = "surface_variant"
             id = "g2"
-            members = [ "GPU", "GPU_TEMP" ]
+            members = [ "GPU", "custom_button_green", "GPU_TEMP" ]
             opacity = 0.39999997615814209
             padding = 6.0
             radius = 6.0
+            widget_spacing = 0
 
         [[bar.Default-Bar.capsule_group]]
         accordion = false
         accordion_direction = "end"
         border = "primary"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g1"
-        members = [ "date", "clock" ]
+        members = [ "clock", "custom_button_default", "date" ]
         opacity = 0.40000000596046448
         padding = 6.0
         radius = 6.0
-        widget_spacing = 7
 
         [[bar.Default-Bar.capsule_group]]
         accordion = false
         accordion_direction = "end"
         border = "primary"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g2"
-        members = [ "tray", "notifications", "bluetooth", "widget", "power_profile", "speedtest-widget", "bar" ]
+        members = [
+            "tray",
+            "custom_button_default",
+            "notifications",
+            "bluetooth",
+            "widget",
+            "power_profile",
+            "speedtest-widget",
+            "widget_3"
+        ]
         opacity = 0.40000000596046448
         padding = 6.0
         radius = 6.0
-        widget_spacing = 7
+
+        [[bar.Default-Bar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "active_window", "custom_button_default", "media" ]
+        opacity = 0.39999997615814209
+        padding = 6.0
+        radius = 6.0
+        widget_spacing = 0
 
     [bar.Fullscreen-Bar]
     background_opacity = 0.0
@@ -114,30 +142,35 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             accordion = false
             accordion_direction = "end"
             border = "#53EAFD"
+            border_width = 1.0
             enabled = true
             fill = "surface_variant"
             id = "g1"
-            members = [ "CPU_CUSTOM", "CPU_TEMP" ]
+            members = [ "CPU_CUSTOM", "custom_button_blue", "CPU_TEMP" ]
             opacity = 0.39999997615814209
             padding = 6.0
             radius = 6.0
+            widget_spacing = 0
 
             [[bar.Fullscreen-Bar.monitor.DP-1.capsule_group]]
             accordion = false
             accordion_direction = "end"
             border = "#7BF1A8"
+            border_width = 1.0
             enabled = true
             fill = "surface_variant"
             id = "g2"
-            members = [ "GPU", "GPU_TEMP" ]
+            members = [ "GPU", "custom_button_green", "GPU_TEMP" ]
             opacity = 0.39999997615814209
             padding = 6.0
             radius = 6.0
+            widget_spacing = 0
 
             [[bar.Fullscreen-Bar.monitor.DP-1.capsule_group]]
             accordion = false
             accordion_direction = "end"
             border = "primary"
+            border_width = 1.0
             enabled = true
             fill = "surface_variant"
             id = "g3"
@@ -206,6 +239,7 @@ monitors = [ "DP-1" ]
 pinned = [
     "steam",
     "com.heroicgameslauncher.hgl",
+    "page.kramo.Cartridges",
     "com.shellyorg.shelly",
     "brave-origin",
     "org.gnome.TextEditor",
@@ -230,7 +264,7 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
     [idle.behavior.lock]
     action = "lock"
-    enabled = true
+    enabled = false
     timeout = 300.0
 
     [idle.behavior.lock-and-suspend]
@@ -668,6 +702,7 @@ wallpaper_scheme = "m3-tonal-spot"
     builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
     community_ids = [
         "tauon",
+        "brave",
         "brave-origin",
         "discord",
         "libreoffice",
@@ -818,21 +853,18 @@ type = "sysmon"
 [widget.active_window]
 capsule = true
 capsule_radius = 6
-enabled = false
-max_length = 800
+max_length = 700
 min_length = 0
+show_empty_label = true
 title_scroll = "always"
 
 [widget.audio_visualizer]
-bands = 128
+bands = 64
 capsule = true
 capsule_radius = 6
 high_color = "secondary"
 show_when_idle = true
-width = 300.0
-
-[widget.bar]
-type = "prponkshe/mango-displays:bar"
+width = 200
 
 [widget.battery]
 capsule = true
@@ -859,6 +891,20 @@ type = "noctalia/bongocat:cat"
 capsule = true
 capsule_radius = 6
 
+[widget.custom_button_blue]
+color = "#53EAFD"
+glyph = "tallymark-1"
+type = "custom_button"
+
+[widget.custom_button_default]
+glyph = "tallymark-1"
+type = "custom_button"
+
+[widget.custom_button_green]
+color = "#7BF1A8"
+glyph = "tallymark-1"
+type = "custom_button"
+
 [widget.date]
 capsule_opacity = 0.0
 color = "primary"
@@ -866,8 +912,7 @@ color = "primary"
 [widget.media]
 capsule = true
 capsule_opacity = 0.40000000000000002
-enabled = false
-max_length = 800
+max_length = 500
 min_length = 0
 title_scroll = "always"
 
@@ -924,6 +969,9 @@ type = "oldirtty/color_picker:widget"
 
 [widget.widget_2]
 type = "blackbartblues/audio-switcher:widget"
+
+[widget.widget_3]
+type = "oldirtty/color_picker:widget"
 
 [widget.workspaces]
 capsule_radius = 6
