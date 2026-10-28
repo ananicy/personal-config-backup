@@ -5,6 +5,9 @@ pacman -Qdt
 pacman -Qm
 sudo pacman -Rsn $(pacman -Qdtq)
 
+sudo systemctl disable --now ananicy-cpp
+sudo systemctl enable --now ananicy-cpp
+
 git add .
 git commit -m "backup"
 git push

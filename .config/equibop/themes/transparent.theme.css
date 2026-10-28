@@ -18,10 +18,10 @@
   --home-button-image: transparent;
   --home-button-size: cover;
   --home-button-position: center;
-  --serverlist-brightness: 0.3;
-  --left-brightness: 0.3;
-  --middle-brightness: 0.3;
-  --right-brightness: 0;
+  --serverlist-brightness: 0.0;
+  --left-brightness: 0.0;
+  --middle-brightness: 0.0;
+  --right-brightness: 0.0;
   --overlay-brightness: 0.75;
   --gradient-primary: 0,0,0;
   --gradient-secondary: 114,114,114;
