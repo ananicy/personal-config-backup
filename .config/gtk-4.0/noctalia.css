@@ -7,9 +7,9 @@
 /* App-scoped CSS of enabled community GTK extensions; Noctalia maintains this file. */
 @import url("noctalia-extensions.css");
 
-@define-color accent_color #80cfff;
-@define-color accent_bg_color #80cfff;
-@define-color accent_fg_color #00344b;
+@define-color accent_color #aed18d;
+@define-color accent_bg_color #aed18d;
+@define-color accent_fg_color #1c3703;
 
 @define-color destructive_bg_color #ffb4ab;
 @define-color destructive_fg_color #690005;
@@ -17,35 +17,35 @@
 @define-color error_bg_color #ffb4ab;
 @define-color error_fg_color #690005;
 
-@define-color window_bg_color #101417;
-@define-color window_fg_color #e0e3e7;
+@define-color window_bg_color #11140e;
+@define-color window_fg_color #e2e3d9;
 
-@define-color view_bg_color #101417;
-@define-color view_fg_color #e0e3e7;
+@define-color view_bg_color #11140e;
+@define-color view_fg_color #e2e3d9;
 
-@define-color headerbar_bg_color #101417;
-@define-color headerbar_fg_color #e0e3e7;
+@define-color headerbar_bg_color #11140e;
+@define-color headerbar_fg_color #e2e3d9;
 @define-color headerbar_backdrop_color @window_bg_color;
 
-@define-color popover_bg_color #1c2023;
-@define-color popover_fg_color #e0e3e7;
+@define-color popover_bg_color #1e211a;
+@define-color popover_fg_color #e2e3d9;
 
-@define-color card_bg_color #1c2023;
-@define-color card_fg_color #e0e3e7;
+@define-color card_bg_color #1e211a;
+@define-color card_fg_color #e2e3d9;
 
-@define-color dialog_bg_color #101417;
-@define-color dialog_fg_color #e0e3e7;
+@define-color dialog_bg_color #11140e;
+@define-color dialog_fg_color #e2e3d9;
 
-@define-color overview_bg_color #1c2023;
-@define-color overview_fg_color #e0e3e7;
+@define-color overview_bg_color #1e211a;
+@define-color overview_fg_color #e2e3d9;
 
-@define-color sidebar_bg_color #1c2023;
-@define-color sidebar_fg_color #e0e3e7;
+@define-color sidebar_bg_color #1e211a;
+@define-color sidebar_fg_color #e2e3d9;
 @define-color sidebar_backdrop_color @window_bg_color;
 @define-color sidebar_border_color @window_bg_color;
 
-@define-color secondary_sidebar_bg_color #101417;
-@define-color secondary_sidebar_fg_color #e0e3e7;
+@define-color secondary_sidebar_bg_color #11140e;
+@define-color secondary_sidebar_fg_color #e2e3d9;
 
 /* Focused selection states */
 @define-color theme_selected_bg_color @accent_bg_color;
@@ -60,9 +60,9 @@
 @define-color theme_unfocused_selected_fg_color @accent_fg_color;
 
 :root {
-    --accent-color: #80cfff;
-    --accent-bg-color: #80cfff; 
-    --accent-fg-color: #00344b;
+    --accent-color: #aed18d;
+    --accent-bg-color: #aed18d; 
+    --accent-fg-color: #1c3703;
 
     --destructive-bg-color: #ffb4ab;
     --destructive-fg-color: #690005;
@@ -71,40 +71,40 @@
     --error-fg-color: #690005;
     --error-color: #ffb4ab;
 
-    --window-bg-color: #101417;
-    --window-fg-color: #e0e3e7;
+    --window-bg-color: #11140e;
+    --window-fg-color: #e2e3d9;
 
-    --view-bg-color: #101417;
-    --view-fg-color: #e0e3e7;
+    --view-bg-color: #11140e;
+    --view-fg-color: #e2e3d9;
 
-    --headerbar-bg-color: #101417;
-    --headerbar-fg-color: #e0e3e7;
+    --headerbar-bg-color: #11140e;
+    --headerbar-fg-color: #e2e3d9;
     --headerbar-backdrop-color: @window_bg_color;
 
-    --popover-bg-color: #1c2023;
-    --popover-fg-color: #e0e3e7;
+    --popover-bg-color: #1e211a;
+    --popover-fg-color: #e2e3d9;
 
-    --card-bg-color: #1c2023;
-    --card-fg-color: #e0e3e7;
+    --card-bg-color: #1e211a;
+    --card-fg-color: #e2e3d9;
 
-    --dialog-bg-color: #101417;
-    --dialog-fg-color: #e0e3e7;
+    --dialog-bg-color: #11140e;
+    --dialog-fg-color: #e2e3d9;
 
-    --overview-bg-color: #1c2023;
-    --overview-fg-color: #e0e3e7;
+    --overview-bg-color: #1e211a;
+    --overview-fg-color: #e2e3d9;
 
-    --sidebar-bg-color: #1c2023;
-    --sidebar-fg-color: #e0e3e7;
+    --sidebar-bg-color: #1e211a;
+    --sidebar-fg-color: #e2e3d9;
     --sidebar-backdrop-color: @window_bg_color;
     --sidebar-border-color: @window_bg_color;
 
-    --warning-bg-color: #b27dc7;
-    --warning-fg-color: #1a0027;
-    --warning-color: #eab2ff;
+    --warning-bg-color: #1e4e4c;
+    --warning-fg-color: #bbece9;
+    --warning-color: #a0cfcd;
 
-    --success-color: #accbe1;
-    --success-bg-color: #2e4c5f;
-    --success-fg-color: #9ebcd2;
+    --success-color: #becbae;
+    --success-bg-color: #3f4a34;
+    --success-fg-color: #dae7c9;
     
     --shade-color: rgba(0, 0, 0, 0.36);
 }

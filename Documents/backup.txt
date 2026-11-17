@@ -10,6 +10,7 @@ rsync -av --delete ~/.config/MangoHud ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/btop ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/fastfetch ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/kitty ~/git/personal-config-backup/.config/
+rsync -av --delete ~/.config/luciole ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/qt6ct ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/qt5ct ~/git/personal-config-backup/.config/
 rsync -av --delete ~/.config/environment.d ~/git/personal-config-backup/.config/

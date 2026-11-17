@@ -1,4 +1,4 @@
-config_version = 14
+config_version = 20
 
 [accessibility]
 ui_scale = 1.2500000111758709
@@ -20,7 +20,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
     center = [ "group:g3" ]
     color = "primary"
     contact_shadow = false
-    end = [ "recorder", "group:g2", "widget_2" ]
+    end = [ "group:g2" ]
     font_weight = 700
     margin_edge = 0
     margin_ends = 0
@@ -32,6 +32,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
 
         [bar.Default-Bar.monitor.DP-2]
         center = []
+        enabled = false
         end = []
         start = [ "group:g1", "RAM_CUSTOM", "group:g2", "VRAM", "UP", "DOWN" ]
 
@@ -41,7 +42,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             border = "#53EAFD"
             border_width = 1.0
             enabled = true
-            fill = "surface_variant"
+            fill = "surface_container"
             id = "g1"
             members = [ "CPU_CUSTOM", "custom_button_blue", "CPU_TEMP" ]
             opacity = 0.39999997615814209
@@ -55,7 +56,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             border = "#7BF1A8"
             border_width = 1.0
             enabled = true
-            fill = "surface_variant"
+            fill = "surface_container"
             id = "g2"
             members = [ "GPU", "custom_button_green", "GPU_TEMP" ]
             opacity = 0.39999997615814209
@@ -69,7 +70,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
         border = "primary"
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g1"
         members = [ "clock", "custom_button_default", "date" ]
         opacity = 0.40000000596046448
@@ -82,7 +83,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
         border = "primary"
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g2"
         members = [
             "tray",
@@ -92,7 +93,8 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             "widget",
             "power_profile",
             "speedtest-widget",
-            "widget_3"
+            "widget_3",
+            "mpvpaper"
         ]
         opacity = 0.40000000596046448
         padding = 6.0
@@ -104,7 +106,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
         border = "primary"
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g3"
         members = [ "active_window", "custom_button_default", "media" ]
         opacity = 0.39999997615814209
@@ -144,7 +146,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             border = "#53EAFD"
             border_width = 1.0
             enabled = true
-            fill = "surface_variant"
+            fill = "surface_container"
             id = "g1"
             members = [ "CPU_CUSTOM", "custom_button_blue", "CPU_TEMP" ]
             opacity = 0.39999997615814209
@@ -158,7 +160,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             border = "#7BF1A8"
             border_width = 1.0
             enabled = true
-            fill = "surface_variant"
+            fill = "surface_container"
             id = "g2"
             members = [ "GPU", "custom_button_green", "GPU_TEMP" ]
             opacity = 0.39999997615814209
@@ -172,7 +174,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
             border = "primary"
             border_width = 1.0
             enabled = true
-            fill = "surface_variant"
+            fill = "surface_container"
             id = "g3"
             members = [ "clock", "date" ]
             opacity = 0.39999997615814209
@@ -185,7 +187,7 @@ order = [ "Default-Bar", "Fullscreen-Bar" ]
         accordion_direction = "end"
         border = "primary"
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g1"
         members = [ "date", "clock" ]
         opacity = 0.39999997615814209
@@ -234,12 +236,13 @@ enabled = false
 icon_size = 64
 inactive_opacity = 0.74999998323619366
 launcher_custom_image = "/home/lemontree/Drive/4TB Drive/Avatar Cut Out/dibujo-24.png"
+launcher_position = "start"
 margin_edge = 2
-monitors = [ "DP-1" ]
 pinned = [
     "steam",
     "com.heroicgameslauncher.hgl",
     "page.kramo.Cartridges",
+    "recomplauncher_0.90.0-beta.13_amd64",
     "com.shellyorg.shelly",
     "brave-origin",
     "org.gnome.TextEditor",
@@ -250,7 +253,8 @@ pinned = [
     "cachyos-hello",
     "org.cachyos.scx-manager",
     "org.cachyos.KernelManager",
-    "localsend"
+    "localsend",
+    "io.missioncenter.MissionCenter"
 ]
 reserve_space = false
 shadow = false
@@ -323,6 +327,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -330,7 +335,7 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
     box_height = 196.0
     box_width = 784.0
-    cx = 720.0
+    cx = 720.00006103515625
     cy = 226.0
     output = "DP-2"
     placement_height = 2560.0
@@ -345,6 +350,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -361,7 +367,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -372,6 +378,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -394,6 +401,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -545,6 +553,7 @@ speedtest_position = "center"
 
 [plugin_settings."noctalia/mpvpaper"]
 auto_pause = false
+mute = false
 picker_placement = "floating"
 picker_position = "center"
 video_directory = "/home/lemontree/Drive/4TB HDD/Music Visualizer"
@@ -580,7 +589,6 @@ enabled = [
     "8bury/mini-docker",
     "nightwatch75/file-search",
     "blackbartblues/keymap",
-    "blackbartblues/audio-switcher",
     "ezequiel/mango_layouts",
     "noctalia/mpvpaper",
     "alexander/game-launcher",
@@ -613,14 +621,16 @@ ui_scale = 1.2500000111758709
         "steam",
         "org.gnome.TextEditor",
         "com.shellyorg.shelly",
-        "brave-origin",
         "proton-pass",
         "localsend",
         "org.gnome.Calculator",
         "org.cachyos.KernelManager",
         "org.cachyos.scx-manager",
-        "heroic"
+        "heroic",
+        "brave-origin",
+        "io.missioncenter.MissionCenter"
     ]
+    width = 750
 
     [shell.panel]
     control_center_placement = "floating"
@@ -692,14 +702,14 @@ ui_scale = 1.2500000111758709
 gpu_poll_seconds = 2
 
 [theme]
-builtin = "Catppuccin"
+builtin = "Noctalia"
 community_palette = "Rose Pine Moon"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
+    builtin_ids = [ "alacritty", "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "mango", "qt" ]
     community_ids = [
         "tauon",
         "brave",
@@ -728,7 +738,7 @@ transition_on_startup = true
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/lemontree/Pictures/Wallpaper/tk.jpeg"
+    path = "/home/lemontree/Pictures/Wallpaper/Wallpaper/tk.jpeg"
 
     [wallpaper.last]
     path = "/home/lemontree/Pictures/Wallpaper/DP-1/wallhaven-6leqjw.jpg"
@@ -853,7 +863,7 @@ type = "sysmon"
 [widget.active_window]
 capsule = true
 capsule_radius = 6
-max_length = 700
+max_length = 650
 min_length = 0
 show_empty_label = true
 title_scroll = "always"
@@ -912,9 +922,12 @@ color = "primary"
 [widget.media]
 capsule = true
 capsule_opacity = 0.40000000000000002
-max_length = 500
+max_length = 450
 min_length = 0
 title_scroll = "always"
+
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
 
 [widget.network]
 capsule = true
@@ -929,9 +942,6 @@ type = "yogaeru/mango_layout:picker"
 
 [widget.picker_2]
 type = "yogaeru/mango_layout:picker"
-
-[widget.recorder]
-type = "noctalia/screen_recorder:recorder"
 
 [widget.screen_recorder]
 script = "scripts/screen_recorder.lua"
@@ -966,9 +976,6 @@ font_weight = 700
 
 [widget.widget]
 type = "oldirtty/color_picker:widget"
-
-[widget.widget_2]
-type = "blackbartblues/audio-switcher:widget"
 
 [widget.widget_3]
 type = "oldirtty/color_picker:widget"

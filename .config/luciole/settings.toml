@@ -1,0 +1,15 @@
+schema_version = 1
+
+[browser]
+always_show_status_bar = true
+background_opacity = 0.3
+chooser_show_preview = true
+directories_first = true
+grid_icon_size = 128
+show_created_column = true
+show_hidden = true
+show_modified_column = false
+sort_by = "created"
+sort_descending = true
+terminal_command = "foot --app-id=Luciole"
+view_mode = "grid"
