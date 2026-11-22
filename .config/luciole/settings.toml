@@ -2,10 +2,13 @@ schema_version = 1
 
 [browser]
 always_show_status_bar = true
-background_opacity = 0.3
+background_opacity = 0.4
 chooser_show_preview = true
+corner_radius_scale = 0.0
+density = "comfortable"
 directories_first = true
 grid_icon_size = 128
+hidden_last = false
 show_created_column = true
 show_hidden = true
 show_modified_column = false
